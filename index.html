@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Calc</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body class="light">
+    <div class="container">
+        <div class="switch-container">
+            <div class="switch"></div>
+        </div>
+        <div class="calc">
+            <div class="screen">10 x 11</div>
+            <div class="digits">
+                <div class="btn btn-digi">1</div>
+                <div class="btn btn-digi">2</div>
+                <div class="btn btn-digi">3</div>
+                <div class="btn btn-digi">4</div>
+                <div class="btn btn-digi">5</div>
+                <div class="btn btn-digi">6</div>
+                <div class="btn btn-digi">7</div>
+                <div class="btn btn-digi">8</div>
+                <div class="btn btn-digi">9</div>
+                <div class="btn btn-digi">.</div>
+                <div class="btn btn-digi">0</div>
+                <div class="btn btn-digi">DEL</div>
+                <div class="btn btn-digi">(</div>
+                <div class="btn btn-digi">)</div>
+                <div class="btn btn-digi">CE</div>
+            </div>
+            <div class="operator">
+                <div class="btn btn-op"> / </div>
+                <div class="btn btn-op"> x </div>
+                <div class="btn btn-op"> - </div>
+                <div class="btn btn-op"> + </div>
+                <div class="btn btn-op">=</div>
+            </div>
+        </div>
+    </div>
+    <span class="credit" style="text-align:center">@anurag989</span>
+</body>
+<script>
+    // Code to detect browser version and display message for IE 11 and below.
+    if((navigator.userAgent.indexOf('MSIE')!==-1) || (navigator.appVersion.indexOf('Trident/') != -1) || (/Edge\/\d./i.test(navigator.userAgent))){
+        console.log("IE")
+        document.getElementsByTagName("body")[0].innerText ="This browser is not supported. Works best in Chrome or Firefox.";
+    }
+</script>
+<script src="index.js"></script>
+</html>
